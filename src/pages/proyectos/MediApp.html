@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MediApp</title>
+        <!-- Importar Bootstrap desde la CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link id="darkModeCss" rel="stylesheet" href="../../styles/darkmode.css">
+
+        <style>
+
+            .my_icon {
+                background-color: cornflowerblue;
+                border-radius: 50%;
+            }
+
+            h1, h2 {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            h3, h4 {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .nota-estilo {
+                background-color: #f8f9fa;
+                border-left: 4px solid #6c757d;
+                padding: 12px 16px;
+                margin: 16px 0;
+                color: #333;
+                font-style: normal;
+            }
+            
+            .nota-estilo strong {
+                color: #0d6efd;
+            }
+
+        </style>
+    
+        <script src="../../scripts/makestructure.js"></script>
+        
+        <!-- Barra de navegación básica -->
+        <div id="header"></div>
+
+        <main class="container py-5">
+            <section class="container text-center my-5">
+                <h1 class="mb-3">MediApp</h1>
+                <div>
+                    <br>
+                    <svg width="200" height="200" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" class="my_icon">
+                    <mask id="mask0_69_182" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+                    <circle cx="256" cy="256" r="256" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_69_182)">
+                    <path d="M533.372 520.25H85.6992L85.874 519.926H-31.9746L116.862 289.433L167.582 367.979L309.535 104L533.372 520.25Z" fill="#4A4459"/>
+                    </g>
+                    <line x1="310.5" y1="39" x2="310.5" y2="104" stroke="black"/>
+                    <rect x="228" y="39" width="82" height="35.2857" fill="#6750A4"/>
+                </svg>
+                </div>
+            </section>
+            <p>
+                <strong>Descripción:</strong> Este proyecto es una aplicación movil, que planea resolver
+                la problematica del desarrollo propio, con esta app se espera ayudar a los usuarios a 
+                realizar sus tareas diarias de forma organizada y mantener un control eficiente tanto de sus
+                actividades como su dieta y actividad fisica.
+            </p>
+            <p>
+                <strong>Objetivo:</strong> El objetivo principal de MediApp es proporcionar una plataforma
+                intuitiva y fácil de usar que permita a los usuarios gestionar sus actividades diarias, 
+                controlar su consumo de alimentos, calorias, baja de peso, estado actual y realizar cálculos
+                relacionados con la distancia para el registro de ejercicios aerobicos y transformación
+                de cantidades de medición.
+
+            <h3>Design Thinking</h3>
+            <p>
+                MediApp se desarrolló siguiendo la metodología de Design Thinking, que incluye las fases de empatizar,
+                definir, idear, prototipar y testear. A través de entrevistas y encuestas, se identificaron las
+                necesidades de los usuarios en cuanto a la organización de sus actividades diarias y el control de su dieta.
+            </p>
+            <p>
+                También se analizaron aplicaciones similares para identificar oportunidades de mejora y diferenciación.
+            </p>
+
+            <blockquote class="nota-estilo">
+                <strong>Nota:</strong> Los conocimientos de esta metodología fueron adquiridos en el curso de
+                <a href="https://www.coursera.org/account/accomplishments/verify/VDEDKJFJXHL1" target="_blank">
+                    Fundamentos de experiencia de usuario (UX)
+                </a>de Google en Coursera. Tambien aplique conocimientos del curso de
+                <a href="https://platzi.com/p/esarricolea/curso/11752-course/diploma/detalle/" target="_blank">
+                    Fundamentos de diseño de Apps
+                </a> de Platzi.
+            </blockquote>
+
+            <h1>Fases:</h1>
+
+            <div> <!-- Empatizar -->
+                <h4>1 - Idear: Sketchbook</h4>
+                <p>
+                    El sketchbook es una herramienta esencial en el proceso de diseño, donde se plasman las ideas iniciales
+                    y se exploran diferentes conceptos visuales. En este caso, se genero un diseño mas trabajado que
+                    representan las pantallas principales de la aplicación MediApp, incluyendo la pantalla de inicio,
+                    actividades, control de consumo, calculadora de distancia y calculadora de cantidad.
+                </p>
+                <br>
+                <div class="row g-3" style="text-align: center;">
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="../../docs/MediApp SketchBook/animacion.png" target="_blank">
+                        <img src="../../docs/MediApp SketchBook/animacion.png" class="img-thumbnail" alt="Prototipo página 1">
+                        </a>
+                        <p>Pantalla de inicio</p>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="../proyectos/prototipo1_p2.png" target="_blank">
+                        <img src="../../docs/MediApp SketchBook/actividades.png" class="img-thumbnail" alt="Prototipo página 2">
+                        </a>
+                        <p>Pantalla de actividades</p>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="../proyectos/prototipo1_p2.png" target="_blank">
+                        <img src="../../docs/MediApp SketchBook/consumo.png" class="img-thumbnail" alt="Prototipo página 2">
+                        </a>
+                        <p>Pantalla de control de consumo</p>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="../proyectos/prototipo1_p2.png" target="_blank">
+                        <img src="../../docs/MediApp SketchBook/distancia.png" class="img-thumbnail" alt="Prototipo página 2">
+                        </a>
+                        <p>Pantalla de calculadora de distancia</p>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="../proyectos/prototipo1_p2.png" target="_blank">
+                        <img src="../../docs/MediApp SketchBook/cantidad.png" class="img-thumbnail" alt="Prototipo página 2">
+                        </a>
+                        <p>Pantalla de calculadora de cantidad</p>
+                    </div>
+                </div>
+            </div>
+
+            <div> <!-- Definir -->
+                <h4>2 - Definir: Persona</h4>
+                <p>
+                    Los requisitos del proyecto se definieron a partir de las necesidades identificadas en la fase de empatizar.
+                    Se opto por el desarrollo de una Persona que representa al usuario típico de MediApp.
+                </p>
+                <section class="container my-5">
+                    <h2 class="mb-4">Persona</h2>
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                        <h5 class="card-title">Ethan – Estudiante Universitario</h5>
+                        <p class="card-text"><strong>Edad:</strong> 20 años</p>
+                        <p class="card-text"><strong>Objetivo:</strong> Mejorar sus hábitos físicos y profesionales para alcanzar metas personales.</p>
+
+                        <h6 class="mt-4">🧩 Necesidades</h6>
+                        <ul>
+                            <li>Organizar su día y evitar la procrastinación.</li>
+                            <li>Controlar su alimentación sin aplicaciones complicadas.</li>
+                            <li>Registrar su actividad física sin depender de apps externas.</li>
+                            <li>Disponer de herramientas prácticas como una calculadora útil para su vida diaria.</li>
+                        </ul>
+
+                        <h6 class="mt-4">⚠️ Frustraciones</h6>
+                        <ul>
+                            <li>Procrastinación constante.</li>
+                            <li>Dificultad para mantener hábitos sostenibles.</li>
+                            <li>Comer sano es costoso y requiere planificación adicional.</li>
+                        </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div><!-- Idear -->
+                <h4>3 - Idear: Historias de usuario</h4>
+                <section class="container my-5">
+                    <h2 class="mb-4">Historias de Usuario</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                        Como usuario, quiero registrar actividades por realizar y completadas, para organizar mi día.
+                        </li>
+                        <li class="list-group-item">
+                        Como usuario, quiero ver una racha de días seguidos cumpliendo mis actividades, para motivarme.
+                        </li>
+                        <li class="list-group-item">
+                        Como usuario, quiero anotar cuántas calorías comí en cada comida, sin ingresar alimentos específicos, para llevar un control personal.
+                        </li>
+                        <li class="list-group-item">
+                        Como usuario, quiero saber cuántas calorías me faltan consumir y el déficit del día, para mantener un objetivo calórico.
+                        </li>
+                        <li class="list-group-item">
+                        Como usuario, quiero registrar el cardio o ejercicio que hago con calorías estimadas quemadas, para evaluar mi progreso físico.
+                        </li>
+                        <li class="list-group-item">
+                        Como usuario, quiero calcular mis minutos por kilómetro en cardio, para estimar mi rendimiento.
+                        </li>
+                        <li class="list-group-item">
+                        Como usuario, quiero convertir cantidades de alimentos (gramos, tazas, etc.), para facilitar mis recetas y registro de comidas.
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <div> <!-- Prototipar -->
+                <h4>4- Prototipar: Figma</h4>
+                <h5>Prototipado de alta</h5>
+                <p>
+                    El prototipo de alta fidelidad se desarrolló utilizando Figma, donde se crearon pantallas interactivas
+                    que simulan la navegación y funcionalidad de la aplicación. Este prototipo permite a los usuarios
+                    experimentar la interfaz y proporcionar retroalimentación antes del desarrollo final.
+                </p>
+                <br>
+                <iframe
+                    style="border: 1px solid #ccc;"
+                    width="100%"
+                    height="600"
+                    src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/6TIKEfdP65UPeJjdeJBbFq?node-id=0-1&t=PMtzqERQDyq15zjt-6"
+                    allowfullscreen>
+                </iframe>
+                <section class="text-center my-4">
+                    <a href="https://www.figma.com/proto/6TIKEfdP65UPeJjdeJBbFq?node-id=0-1&t=PMtzqERQDyq15zjt-6" target="_blank" class="btn btn-primary btn-lg px-4 py-2 shadow">
+                        <i class="fab fa-figma me-2"></i> Ver Prototipo en Figma
+                    </a>
+                </section>
+
+            </div>
+
+            <div> <!-- Evaluar -->
+                <h4>5 - Evaluar: Notas de testeo y plan de mejoras</h4>
+                <p>
+                    La fase de testeo se llevará a cabo una vez que el prototipo esté completo. Se realizarán pruebas
+                    con usuarios reales para obtener retroalimentación sobre la usabilidad y funcionalidad de la aplicación.
+                    Se utilizarán métricas como el tiempo de tarea, tasa de éxito y satisfacción del usuario para evaluar
+                    la efectividad del diseño.
+                </p>
+                <section class="container my-5">
+                    <h4 class="mb-4">Evaluación del Prototipo</h2>
+                    <h5>Método</h5>
+                    <p>Pruebas informales con el usuario (yo mismo) utilizando el prototipo.</p>
+
+                    <h5>Preguntas clave</h5>
+                    <ul>
+                        <li>¿La app me motiva a registrar mis hábitos y alimentación?</li>
+                        <li>¿Es fácil visualizar el déficit diario?</li>
+                        <li>¿La calculadora me es útil realmente en mis tareas cotidianas?</li>
+                    </ul>
+
+                    <h5>Observaciones esperadas</h5>
+                    <ul>
+                        <li>El usuario desea ver todo en un solo lugar sin tener que usar varias apps.</li>
+                        <li>La app debe ser muy rápida y visualmente clara para que no cause carga cognitiva.</li>
+                        <li>Si la información es difícil de editar o registrar, puede desmotivarse.</li>
+                    </ul>
+
+                    <h5>Mejoras posibles</h5>
+                    <ul>
+                        <li>Agregar gráficos simples para ver progreso.</li>
+                        <li>Incluir recordatorios o notificaciones mínimas.</li>
+                        <li>Agregar sección de “objetivos” personales.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Desarrollo -->
+            <h1>Desarrollo</h1>
+
+            <div>
+                <h4>Modelado</h4>
+                <p>
+                    Se planea realizar diagramas de clases y se esta planteando la posibilidad
+                    de implementar un diagrama de casos de uso y un diagrama entidad relación según
+                    el tipo de base de datos a implementar.
+                </p>
+                <!-- <img src="../proyectos/diagrama.png" alt="Diagrama de clases" class="img-fluid"> -->
+                 <p align="center"> <i class="fas fa-cog"></i> Aun en desarrollo... <i class="fas fa-cog"></i></p>
+            </div>
+
+            <div>
+                <h4>Código</h4>
+                <p>
+                    El código de la aplicación se esta desarrollando utilizando el lenguaje Dart y el framework Flutter, lo que permite
+                    crear aplicaciones móviles nativas para iOS y Android con una sola base de código. La estructura del proyecto
+                    sigue las mejores prácticas de desarrollo, incluyendo la separación de lógica de negocio, presentación y datos.
+                </p>
+                <blockquote class="nota-estilo">
+                    <strong>Nota:</strong> Para el desarrollo, además estoy aplicando mis conocimientos adquiridos durante mis estudios
+                    en <a href="www.linkedin.com/in/ethan-sarricolea-cortes">Ingeniería de Software</a>, así como los conceptos aprendidos en el curso de
+                    <a href="https://www.domestika.org/es/courses/4650-desarrollo-de-aplicaciones-multiplataforma-con-flutter" target="_blank">
+                    Desarrollo de apps multiplataforma con Flutter</a> y un Curso-Taller "Lenguaje Dart desde Cero".
+                </blockquote>
+                <h5>Herramientas</h5>
+                <ul>
+                    <li>Lenguaje: Dart</li>
+                    <li>Framework: Flutter</li>
+                    <li>Base de datos: (aun por definir)</li>
+                </ul>
+                <section class="text-center my-4">
+                    <a href="https://github.com/Ethan-Sarricolea/MediApp" target="_blank" class="btn btn-dark btn-lg px-4 py-2 shadow">
+                        <i class="fab fa-github me-2"></i> Ver Código en GitHub
+                    </a>
+                </section>
+            </div>
+
+        </main>
+
+        <div id="footer"></div>
+        
+         <!-- Bootstrap JS (necesario para el menú responsive) -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

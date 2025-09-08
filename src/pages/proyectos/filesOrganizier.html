@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mi web</title>
+        <!-- Importar Bootstrap desde la CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Css modo oscuro -->
+        <link rel="stylesheet" href="src/styles/style.css">
+    </head>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <style>
+        h1{
+            font-size: 3rem;
+        }
+    </style>
+    <link id="darkModeCss" rel="stylesheet" href="../../styles/darkmode.css">
+        <body>
+    
+            <script src="../../scripts/makestructure.js"></script>
+            <!-- Barra de navegación básica -->
+            <div id="header"></div>
+
+            <main>
+                <p class="container" style="padding-top: 30px;">Ultima modificación de proyecto: Marzo 03, 2025</p>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+                <!-- Secciones y contenido -->
+                 <script src="../../scripts/loadmd.js" defer></script>
+                <div id="readme" data-imagen-url="https://raw.githubusercontent.com/Ethan-Sarricolea/Files-organizier/refs/heads/master/LEEME.md"
+                class="container" style="padding-bottom: 30px; padding-top: 30px;">
+                    Cargando...
+                </div>
+
+            <div class="card text-center shadow" style="max-width: 400px; margin: auto; margin-bottom: 30px">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title" style="color: white;">📌Proyecto en GitHub📌</h5>
+                    <p class="card-text" style="color: white;">Descarga y prueba el codigo aquí</p>
+                    <a href="https://github.com/Ethan-Sarricolea/Files-organizier" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Ir a GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Guia de uso de interfaz grafica</h2>
+                <p>Proximamente...</p>
+            </div>
+            </main>
+
+         <div id="footer"></div>
+
+    <!-- Bootstrap JS (necesario para el menú responsive) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

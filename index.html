@@ -1,16 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a sample paragraph to demonstrate the HTML structure.</p>
-    <button id="myButton">Click Me!</button>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mi web</title>
+        <!-- Importar Bootstrap desde la CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Css modo oscuro -->
+        <link rel="stylesheet" href="src/styles/style.css">
+    </head>
 
-    <script src="script.js"></script>
-</body>
+    <script src="src/scripts/makestructure.js"></script>
+    
+    <!-- Barra de navegación básica -->
+    <div id="header"></div>
+
+    <body id="animated" class="presentation">
+        <!-- Información de la pagina -->
+        <main>
+            <br>
+            <section id="MyPhoto" class="container">
+                <div style="justify-content: center;
+                display: flex; width: auto; height: 400px; max-height: 600px;
+                max-width: 600px; object-fit: cover; margin: 0 auto;">
+                    <img src="https://avatars.githubusercontent.com/u/144255690?v=4" alt="Imagen de perfil" class="rounded-circle" style="width: auto;">
+                </div>
+            <br>
+            </section>
+            <!-- About me -->
+            <section id="about-me" class="container">
+                <h1>Sobre mi</h1>
+                <p>
+                    ¡Hola!, me llamo Ethan y actualmente soy estudiante de ingeniería de software en
+                    la Universidad Veracruzana.
+                </pp>
+                <p>
+                    Hace no muchos años comenzo mi pasion por la tecnología, por lo que
+                    hago esta pagina para poner a prueba mis conocimientos, compartir mis logos
+                    y proyectos.
+                </p>
+                <br>
+                <div style="text-align: right; list-style-position: inside;">
+                    <h3 style="background-color: rgb(191, 191, 191);">Lo que me gusta hacer</h3>
+                    <p style="text-align: right;">Algunas de las areas que mas llaman mi atención</p>
+                    <ul >
+                        <li>
+                            <b>Desarrollo de videojuegos</b>
+                        </li>
+                        <br>
+                        <li>
+                            <b>Ciberseguridad</b>
+                        </li>
+                        <br>
+                        <li>
+                            <b>Inteligencia artifical</b>
+                        </li>
+                        <br>
+                        <li>
+                            <b>Diseño</b>
+                        </li>
+                        <br>
+                        <li>
+                            <b>Programación competitiva</b>
+                        </li>
+                    </ul>    
+                </div>
+            </section>
+            <br>
+            <hr>
+
+            <!-- Herramientas -->
+            <section class="container">
+                <h1>Herramientas</h1>
+                <p>Estas son algunas de las herramientas que he aprendido a utilizar</p>
+                <br>
+
+                <!-- Lenguajes -->
+                <div class="container" style="text-align: center;">
+                        <h2>Lenguajes de programación</h2>
+                        <br>
+                        <div class="grid-container">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python logo" class="programming-lang-logo">
+                                <details>
+                                    <summary><h3>Python</h3></summary>
+                                    <li>Conceptos basicos</li>
+                                    <li>Manejo de archivos</li>
+                                    <li>Programación Orientada a Objetos</li>
+                                    <li>Tkinter</li>
+                                    <li>Pygame</li>
+                                    <li>NetworkX</li>
+                                    <li>Mysql connector</li>
+                                </details>
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/121px-Java_programming_language_logo.svg.png" alt="Java logo" class="programming-lang-logo">
+                                <details>
+                                    <summary><h3>Java</h3></summary>
+                                    <li>Conceptos basicos</li>
+                                    <li>Programación Orientada a Objetos</li>
+                                    <li>Manejo de excepciones</li>
+                                    <li>Manejo de archivos</li>
+                                </details>
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo" class="programming-lang-logo">
+                                <details>
+                                    <summary><h3>JavaScript</h3></summary>
+                                    <li>Conceptos basicos</li>
+                                    <li>Manejo de archivos</li>
+                                    <li>Programación Orientada a Objetos</li>
+                                    <li>DOM</li>
+
+                                </details>
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart logo" class="programming-lang-logo">
+                                <details>
+                                    <summary><h3>Dart</h3></summary>
+                                    <li>Conceptos Basicos</li>
+                                    <li>Funciones</li>
+                                    <li>Clases de archivos y directorios</li>
+                                </details>                       
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C plus plus logo" class="programming-lang-logo">
+                                <details>
+                                    <summary><h3>C++</h3></summary>
+                                    <p>Programación competitiva</p>
+                                    <li>Conceptos basicos</li>
+                                    <li>BFS</li>
+                                </details>
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="c logo" class="programming-lang-logo">
+                                <details>
+                                    <summary><h3>C</h3></summary>
+                                    <p>Conceptos basicos</p>
+                                </details>
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" alt="typescript logo" class="programming-lang-logo">
+                                <details>
+                                    <summary><h3>TypeScript</h3></summary>
+                                    <p>Conceptos basicos</p>
+                            </div>
+                        </div>
+                        
+                </div>
+                <br>
+
+                <!-- Herramientas web -->
+                <div class="container" style="text-align: center;">
+                        <br>
+                        <h2>Herramientas web</h2>
+                        <br>
+                        <div class="grid-container row">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo" class="programming-lang-logo">
+                                <h3>HTML</h3>
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png" alt="CSS Logo" class="programming-lang-logo">
+                                <h3>CSS</h3>
+                                
+                            </div>
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/220px-Bootstrap_logo.svg.png" alt="Logo Bootstrap" class="programming-lang-logo">
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </div>
+                </div>
+                <br>
+
+                <!-- Herramientas -->
+                 <div class="container" style="text-align: center;">
+                    <br>
+                    <h2>Otras herramientas</h2>
+                    <br>
+                    <div class="grid-container">
+                        <div>
+                            <img src="https://images.sftcdn.net/images/t_app-icon-m/p/917c77e8-96d1-11e6-8453-00163ed833e7/3780880766/mysql-com-icon.png" alt="Mysql logo" class="programming-lang-logo">
+                            <details>
+                                <summary><h3>SQL</h3></summary>
+                                <li>Consultas</li>
+                                <p></p>
+                                <div style="display:inline-flex">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/HeidiSQL_logo_image.png/800px-HeidiSQL_logo_image.png" alt="HeidiSQL" class="sub-logo">
+                                    <p>HeidiSQL</p>
+                                </div>
+                                <div style="display: inline-flex;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSxPFELu8q6O4d1GSiWos73qQjFwKMVcnmg&s" alt="Xampp logo" class="sub-logo">
+                                    <p>Xampp</p>
+                                </div>
+                                <!-- <li>Procedimientos almacenados</li>
+                                <li>Disparadores</li> -->
+                            </details>
+                        </div>
+                        <div>
+                            <img src="https://cdn.freebiesupply.com/logos/large/2x/unity-69-logo-png-transparent.png" alt="Unity logo" class="programming-lang-logo"
+                            style="background-color: white;">
+                            <h3>Unity</h3>
+                            <details>
+                                    <summary></summary>
+                                    <li>Conceptos basicos</li>
+                                    <li>Skybox</li>
+                            </details>
+                        </div>
+                        <div>
+                            <img src="https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png" alt="Figma logo" class="programming-lang-logo">
+                            <h3>Figma</h3>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <!-- Proyectos -->
+            <section class="container">
+                <div class="row">
+                    <h1 style="text-align: center;">Proyectos</h1>
+                    <ul>
+                        <!-- Nodos y mazmorras -->
+                        <li style="margin-bottom: 30px;">
+                            <a href="src\pages\proyectos\mazmorras.html">
+                                <h3>Generador de mazmorras aleatorias</h3>
+                                <p class="text-box">
+                                    Proyecto escolar que genera mazmorras (representadas en grafos) con un numero
+                                    de salas repartidas y conectadas de forma aleatoria, este proyecto se desarrollo 
+                                    con un pequeño juego para recorrer las salas ganando o perdiendo puntos de acorde
+                                    a la cantidad de salas recorridas y, finalmente al terminar la sala saber
+                                    que camino se recorrio, cuantos puntos se obtuvieron o perdieron al final y cual
+                                    era el camino mas corto.
+                                </p>
+                            </a>
+                        </li>
+                        <!-- organizador de archivos -->
+                        <li>
+                            <a href="src/pages/proyectos/filesOrganizier.html">
+                                <h3>Organizador de archivos</h3>
+                                <p class="text-box">
+                                    Aunque es un proyecto simple y sencillo, implico en su momento un paso mas
+                                    en la escala de mis conocimientos adquiridos. este proyecto hecho con dart
+                                    permite organizar en carpetas diferentes archivos dentro de una ruta seleccionada.
+                                    Ademas de ello generé una pequeña aplicación ejecutable con python para realizar la organización
+                                    rapidamente.
+                                </p>
+                            </a>
+                        </li>
+                        <!-- Mi primer modelo de regresion lineal -->
+                        <li>
+                            <a href="src/pages/proyectos/regresionLineal.html">
+                                <h3>Modelo de regresión lineal</h3>
+                                <p class="text-box">
+                                    Este es mi primer modelo de regresión lineal, algo muy basico e introductorio al
+                                    area de machine learning e inteligencia artificial que pude aprender en un curso que aun estoy tomando.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="src/pages/proyectos.html" class="btn btn-blue btn-lg" style="background-color:rgb(101, 173, 232); margin-bottom: 30px;">
+                            Ver proyectos
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <br>
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS (necesario para el menú responsive) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

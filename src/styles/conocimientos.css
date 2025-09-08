@@ -1,0 +1,22 @@
+/* .programming-lang-logo{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 20%;
+    background-color: white;
+}
+
+div.row h2, p, img{
+    text-align: center;
+}
+
+.grid-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; 
+}
+
+.sub-logo{
+    width: 25px; height: 25px; object-fit: contain;
+} */

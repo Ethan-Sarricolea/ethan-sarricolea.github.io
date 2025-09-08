@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+    </head>
+    <body>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Mazmorras aleatorias</title>
+            <!-- Importar Bootstrap desde la CDN -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        </head>
+
+        <link id="darkModeCss" rel="stylesheet" href="../../styles/darkmode.css">
+        <body>
+            <link rel="stylesheet" href="../../styles/style.css">
+        <script src="../../scripts/makestructure.js"></script>
+        <!-- Barra de navegación básica -->
+        <div id="header"></div>
+
+        <!-- Secciones y contenido -->
+            <section class="container">
+                <div class="row">
+                    <h1 style="padding-top: 20px;">Generador de mazmorras aleatorias</h1>
+                    <h6 style="padding-top: 30px; padding-bottom: 30px;">
+                        Ultima actualización: 12/06/2024
+                    </h6>
+                    <p>
+                        Este es mi proyecto final de la materia de Matematicas discretas,
+                        fue ideado originalmente con la intención de poner en practica el uso de los grafos
+                        dentro de python.
+                    </p>
+                    <p>
+                        Para el proyecto se utilizaron las librerias <a href="https://networkx.org">networkx</a>
+                        por medio de la cual se crean y manejan los grafos, y la
+                        libreria <a href="https://matplotlib.org">matplotlib</a>, para la visualización de los datos
+                        (nodos y vertices).
+                    </p>
+                    <p>
+                        El codigo y su funcionamiento se documento dentro de un archivo notebook / ipybn que se
+                        muestra a continuación.
+                    </p>
+                </div>
+                <iframe src="https://nbviewer.org/github/Ethan-Sarricolea/Juego-de-Mazmorras/blob/main/mazmorras.ipynb" width="100%" height="600px"></iframe>
+                <h4>Observaciones</h4>
+                <p>
+                    Es suceptible a errores y generar una repeticion en la generacion, aproximadamente 1 de
+                    cada 5 generaciones genera errores que llevan a la disminucion del nivel o a una generacion
+                    excesiva de conexiones entre nodos
+                </p>
+                <p style="padding-bottom: 20px;">
+                    Por lo que aun hay correcciones que se pueden realizar (y que planeo realizar a la posterioridad).
+                    El proyecto tambien cuenta con una pentalla sencilla
+                    realizada con <a href="https://docs.python.org/es/3.13/library/tkinter.html" target="_blank">tkinter</a>
+                    donde el objetivo es recorrer la mazmorra hasta llegar al final obteniendo la mayor cantidad posible de puntos
+                    en el camino. En el repositorio de <a href="https://github.com/Ethan-Sarricolea/Juego-de-Mazmorras/tree/main">GitHub</a> se puede encontrar mas información.
+                </p>
+                <div class="card text-center shadow" style="max-width: 400px; margin: auto; margin-bottom: 30px">
+                    <div class="card-body">
+                        <h5 class="card-title">📌Proyecto en GitHub📌</h5>
+                        <p class="card-text">Descarga y prueba el codigo aquí</p>
+                        <a href="https://github.com/Ethan-Sarricolea/Juego-de-Mazmorras/tree/main" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i> Ir a GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!-- Pie de pagina -->
+      
+ 
+           <!-- Footer -->
+            <div id="footer"></div>
+
+    <!-- Bootstrap JS (necesario para el menú responsive) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
