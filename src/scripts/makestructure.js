@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isLocal) {
         basePath = depth > 0 ? "../".repeat(depth) + "src/includes/" : "src/includes/";
     } else {
-        basePath = depth > 0 ? "../".repeat(depth) /*+ repoName*/ + "src/includes/" : `/${repoName}/src/includes/`;
+        basePath = depth > 0 ? "../".repeat(depth) /*+ repoName*/ + "src/includes/" : `src/includes/`;
     }
 
     console.log("basePath:", basePath);
