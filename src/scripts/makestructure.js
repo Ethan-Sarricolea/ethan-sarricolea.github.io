@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     let pathParts = window.location.pathname.split("/").filter(p => p !== "");
-    let depth = pathParts.length - 1; // Calcula la profundidad correctamente
-    console.log("Profundidad:", depth);
-    console.log("Ruta actual:", window.location.pathname);
+    let depth = (pathParts.length < 1 ? 0 : pathParts.length - 1); // Calcula la profundidad correctamente
 
+    // NOTE: comenta o descomenta en desarrollo
+    // console.log("Profundidad:", depth);
+    // console.log("Ruta actual:", window.location.pathname);
     const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
     // const repoName = "MiWeb";
 
@@ -15,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         basePath = depth > 0 ? "../".repeat(depth) /*+ repoName*/ + "src/includes/" : `src/includes/`;
     }
 
-    console.log("basePath:", basePath);
+    // NOTE: comentar o descomentar en desarrollo
+    // console.log("basePath:", basePath);
 
     // Cargar el header y el footer
     let headerEl = document.getElementById("header");
@@ -38,7 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Ajustar rutas de los enlaces de navegación
                 document.querySelectorAll("#header .nav-link").forEach(link => {
                     let originalHref = link.getAttribute("href");
-                    console.log("Original:", originalHref);
+                    
+                    // NOTE: comentar o descomentar en desarrollo
+                    // console.log("Original:", originalHref);
 
                     if (originalHref && !originalHref.startsWith("http")) {
                         let ifrepo = isLocal ? "" : `/${repoName}`;
@@ -47,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         let newHref = "../".repeat(depth) + ifrepo + "/" + originalHref;
                         newHref = newHref.replace(/\/+/g, "/"); // Eliminar dobles barras `/`
 
-                        console.log("Nuevo:", newHref);
+                        // NOTE: comentar o descomentar en desarrollo
+                        // console.log("Nuevo:", newHref);
                         link.setAttribute("href", newHref);
                     }
                 });
