@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Ruta actual:", window.location.pathname);
 
     const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-    const repoName = "MiWeb"; // Cambia esto si tu repo tiene otro nombre
+    // const repoName = "MiWeb";
 
     let basePath = "";
 
     if (isLocal) {
         basePath = depth > 0 ? "../".repeat(depth) + "src/includes/" : "src/includes/";
     } else {
-        basePath = depth > 0 ? "../".repeat(depth) + repoName + "/src/includes/" : `/${repoName}/src/includes/`;
+        basePath = depth > 0 ? "../".repeat(depth) /*+ repoName*/ + "src/includes/" : `/${repoName}/src/includes/`;
     }
 
     console.log("basePath:", basePath);
