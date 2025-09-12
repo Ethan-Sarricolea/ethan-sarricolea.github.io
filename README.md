@@ -4,7 +4,7 @@ Esta es mi pagina web, aqui subire mis apuntes y conocimientos sobre las areas q
 
 ## Funcionamiento
 
-coloca en el navegador el siguiente link para acceder a la pagina: [https://ethan-sarricolea.github.io/MiWeb/](https://ethan-sarricolea.github.io/MiWeb/)
+coloca en el navegador el siguiente link para acceder a la pagina: [https://ethan-sarricolea.github.io/MiWeb/](https://ethan-sarricolea.github.io)
 
 ### Implementaciones
 
