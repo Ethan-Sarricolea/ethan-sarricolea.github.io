@@ -186,8 +186,8 @@ h3 {
 
 .carousel-item img {
   width: auto; /* Mantiene el ancho original sin forzarlo */
-  height: 500px; /* Ajusta la altura según tu diseño */
-  max-width: 700px; /* Tamaño máximo que quieres */
+  height: 300px; /* Ajusta la altura según tu diseño */
+  max-width: 500px; /* Tamaño máximo que quieres */
   object-fit: cover; /* Recorta y ajusta la imagen sin deformarla */
   display: block; /* Evita que el `img` tenga margen extra */
   margin: 0 auto; /* Centra la imagen horizontalmente */
