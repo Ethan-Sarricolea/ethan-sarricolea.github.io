@@ -4,25 +4,10 @@ Esta es mi pagina web, aqui subire mis apuntes y conocimientos sobre las areas q
 
 ## Funcionamiento
 
-coloca en el navegador el siguiente link para acceder a la pagina: [https://ethan-sarricolea.github.io/MiWeb/](https://ethan-sarricolea.github.io)
+coloca en el navegador el siguiente link para acceder a la pagina: [https://ethan-sarricolea.github.io](https://ethan-sarricolea.github.io)
 
-### Implementaciones
+### Pendientes:
 
-Actualmente estoy trabajando en implementar lo siguiente:
-
-4. Correxiones de diseño (21/03/2023)
-- Correccion de JS de encabezado y footer (ahora me permite verlo correctamente desde el live server)
-- Aumento de tamaño del texto (Solo en la pantalla inicial / index)
-- Quitar informacion innecesaria
-- Mejoras de diseño y adicion de animaciones simples
-
-* Aun estoy trabajando en que el modo oscuro se mantenga
-
-### Pendientes
-
-- Mejora en documentacion de codigo y buenas practicas
-- Considerar la optimizacion (A largo plazo)
-- Añadir mas contenido
-- Mejorar aun mas el diseño
-- Permitir que se guarde en cache la eleccion de modo oscuro (El problema podria estar relacionado con el JS de modularizacion de header y footer)
-- Corregir el diseño del carrusel de imagenes (De mis certificados que ahora se movio a conocimientos)
+- Agregar mas proyectos y repositorios.
+- Refactorizar conocimientos (dividirlo en areas y agregar apuntes que no entran en lenguajes como Linux, ciberseguridad y control de versiones)
+- Crear las paginas de mas proyectos aunque aun esten en progreso

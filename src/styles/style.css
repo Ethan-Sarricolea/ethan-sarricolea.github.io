@@ -26,6 +26,80 @@ body.dark-mode {
     transition: background-color 1.5s ease, color 1.5s ease;
 }
 
+/* Normal (modo claro) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Ícono negro */
+  border-radius: 50%;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Si tienes dark-mode como clase en <body> */
+body.dark-mode .carousel-control-prev-icon,
+body.dark-mode .carousel-control-next-icon {
+  background-color: gray; /* Ícono blanco */
+}
+
+/* Estilo general de los botones */
+.toggle-view {
+  transition: all 0.2s ease;
+}
+
+/* En modo claro: usa borde oscuro */
+.toggle-view {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
+/* Activo */
+.toggle-view.active {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* En modo oscuro: usa borde claro */
+body.dark-mode .toggle-view {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+body.dark-mode .toggle-view.active {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.carousel-item img {
+  height: 120px;
+  max-height: 150px;
+}
+
+/* Texto general */
+#language-section, 
+#language-section p,
+#language-section li {
+  color: #000; /* modo claro */
+}
+
+/* Enlaces */
+#language-section a {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Dark mode */
+body.dark-mode #language-section,
+body.dark-mode #language-section p,
+body.dark-mode #language-section li {
+  color: #fff; /* texto visible en modo oscuro */
+}
+
+body.dark-mode #language-section a {
+  color: #f0e68c; /* opcional: enlace con color visible en dark-mode */
+}
+
+
 body.dark-mode h3{
   color: honeydew;
 }
@@ -123,13 +197,13 @@ td ul {
   list-style: none;
 }
 
-.programming-lang-logo{
-  width: 80px;
-  height: 80px;
+/* .programming-lang-logo{
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   /* border-radius: 20%;
-  background-color: white; */
-}
+  background-color: white;
+} */
 
 div.row h2, img{
   text-align: center;
