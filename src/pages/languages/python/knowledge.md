@@ -20,15 +20,19 @@ En cuanto a librerias, he trabajado con algunas relacionadas a analisis de datos
 
 <div style="text-align: center; list-style-position: inside;">
 
-- Numpy
-- Pandas
-- Tkinter
-- Matplotlib
-- Pygame
-- NetworkX
-- MySqlConnector
+| Temas / librerias | Cuanto considero que conozco | Apuntes |
+| --- | --- | --- |
+| Numpy | Basico | En progreso |
+| Pandas | Basico | En progreso |
+| Tkinter | Intermedio | En progreso |
+| Matplotlib | Basico | En progreso | 
+| Pygame | Basico | [Creando mi primer juego](https://ethan-sarricolea.github.io/primer_juego_python) |
+| NetworkX | Basico | En progreso |
+| MySqlConnector - pymysql | Basico | En progreso |
 
 </div>
+
+<br>
 
 ### Mis Certificados
 
@@ -51,4 +55,8 @@ En cuanto a librerias, he trabajado con algunas relacionadas a analisis de datos
   <button class="carousel-control-next" type="button" data-bs-target="#certificates-carousel" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button> -->
+</div>
+
+<div>
+
 </div>
